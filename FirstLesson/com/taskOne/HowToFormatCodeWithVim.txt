@@ -1,14 +1,14 @@
 
 
-vim -c "execute 'normal! =G' | :wq! out.js" input.js
+vim -c "execute 'normal! =G' | :wq! out_HelloWorld.java" HelloWorld.java
 
 You can also use the alternative syntax + instead of -c. It's the same.
 
-vim +"execute 'normal! =G' | :wq! out.js" input.js
+vim +"execute 'normal! =G' | :wq! out_HelloWorld.java" HelloWorld.java
 
     It executes the normal command =G, which will autoformat/indent (=) every line until the end of the file (G).
 
-    Then :wq! out.js writes it to a file and quits vim. If you just want to overwrite the same file, then remove the out.js.
+    Then :wq! out_HelloWorld.java writes it to a file and quits vim. If you just want to overwrite the same file, then remove the out_HelloWorld.java.
 
 Also, you need to have this line in your ~/.vimrc in order for the autoformat indent plugin to work:
 
