@@ -1,0 +1,29 @@
+
+
+vim -c "execute 'normal! =G' | :wq! out.js" input.js
+
+You can also use the alternative syntax + instead of -c. It's the same.
+
+vim +"execute 'normal! =G' | :wq! out.js" input.js
+
+    It executes the normal command =G, which will autoformat/indent (=) every line until the end of the file (G).
+
+    Then :wq! out.js writes it to a file and quits vim. If you just want to overwrite the same file, then remove the out.js.
+
+Also, you need to have this line in your ~/.vimrc in order for the autoformat indent plugin to work:
+
+filetype plugin indent on
+
+
+https://superuser.com/a/1333300/1628637
+
+
+
+
+
+If you like vim you can invoke its action from the command-line.
+
+echo -e "G=gg\n:wq\n" | vim ./HelloWorld.java
+
+Warning the above command will modify your file without prompting. Do a backup before.
+It's possible to find examples integrated with find to accomplish the same work on a bunch of files [0].
