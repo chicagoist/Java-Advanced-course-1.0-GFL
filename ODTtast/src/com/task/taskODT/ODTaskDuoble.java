@@ -4,19 +4,22 @@ package com.task.taskODT;
 
 import java.util.Objects;
 
-public class ODTask {
+public class ODTaskDuoble {
 
     private String word = new String();
     private int id;
 
-    public ODTask() {
+
+    public ODTaskDuoble() {
         setWord("default");
         setId(0);
+
     }
 
-    public ODTask(String args, Integer id) {
+    public ODTaskDuoble(String args, Integer id) {
         this.word = args;
         this.id = id;
+
     }
 
 
@@ -44,7 +47,7 @@ public class ODTask {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ODTask odtask = (ODTask) o;
+        ODTaskDuoble odtask = (ODTaskDuoble) o;
         return Objects.equals(word, odtask.word) && Objects.equals(id, odtask.id);
     }
 
