@@ -2,6 +2,7 @@ package com.task.taskODT;
 
 
 import java.util.Objects;
+import java.lang.*;
 
 public class Main {
     public static void main(String[] args) {
