@@ -1,20 +1,19 @@
-package com.task.taskODT;
+package com.task.taskDTO;
 
-//import java.lang.Override;
 
 import java.util.Objects;
 
-public class ODTask {
+public class DTOtask {
 
     private String word = new String();
     private int id;
 
-    public ODTask() {
+    public DTOtask() {
         setWord("default");
         setId(0);
     }
 
-    public ODTask(String args, Integer id) {
+    public DTOtask(String args, Integer id) {
         this.word = args;
         this.id = id;
     }
@@ -44,8 +43,8 @@ public class ODTask {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ODTask odtask = (ODTask) o;
-        return Objects.equals(word, odtask.word) && Objects.equals(id, odtask.id);
+        DTOtask DTOtask = (DTOtask) o;
+        return Objects.equals(word, DTOtask.word) && Objects.equals(id, DTOtask.id);
     }
 
     @Override

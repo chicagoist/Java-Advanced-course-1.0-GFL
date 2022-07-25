@@ -1,22 +1,21 @@
-package com.task.taskODT;
+package com.task.taskDTO;
 
-//import java.lang.Override;
 
 import java.util.Objects;
 
-public class ODTaskDuoble {
+public class DTOtaskDuoble {
 
     private String word = new String();
     private int id;
 
 
-    public ODTaskDuoble() {
+    public DTOtaskDuoble() {
         setWord("default");
         setId(0);
 
     }
 
-    public ODTaskDuoble(String args, Integer id) {
+    public DTOtaskDuoble(String args, Integer id) {
         this.word = args;
         this.id = id;
 
@@ -47,7 +46,7 @@ public class ODTaskDuoble {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ODTaskDuoble odtask = (ODTaskDuoble) o;
+        DTOtaskDuoble odtask = (DTOtaskDuoble) o;
         return Objects.equals(word, odtask.word) && Objects.equals(id, odtask.id);
     }
 

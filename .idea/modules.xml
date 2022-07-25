@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DTOtask0/DTOtask0.iml" filepath="$PROJECT_DIR$/DTOtask0/DTOtask0.iml" />
       <module fileurl="file://$PROJECT_DIR$/FirstTask/FirstTask.iml" filepath="$PROJECT_DIR$/FirstTask/FirstTask.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java-Advanced-course-1.0-GFL.iml" filepath="$PROJECT_DIR$/Java-Advanced-course-1.0-GFL.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ODTtast/ODTtast.iml" filepath="$PROJECT_DIR$/ODTtast/ODTtast.iml" />
     </modules>
   </component>
 </project>
