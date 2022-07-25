@@ -9,21 +9,24 @@ public class Main {
 
         System.out.println();
         ODTask task1 = new ODTask();
+        task1.setId(777);
         task1.setWord("HelloWorld");
-        task1.setId(666);
+
         System.out.println("(ODTask class) task1.getWord = " + task1.getWord());
         System.out.println("(ODTask class) task1.getId = " + task1.getId());
         System.out.println();
 
         ODTask task2 = new ODTask();
-        task2.setId(666);
+        task2.setId(555);
+
         task2.setWord("HelloWorld");
         System.out.println("(ODTask class) task2.getWord = " + task2.getWord());
         System.out.println("(ODTask class) task2.getId = " + task2.getId() + "\n");
 
         ODTaskDuoble taskDouble = new ODTaskDuoble();
+        taskDouble.setId(777);
         taskDouble.setWord("HelloWorld");
-        taskDouble.setId(666);
+
         System.out.println("(ODTaskDuoble class) taskDouble.getWord = " + taskDouble.getWord());
         System.out.println("(ODTaskDuoble class) taskDouble.getId = " + taskDouble.getId());
         System.out.println();
